@@ -1,0 +1,55 @@
+.about__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about__avatar {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.about__video-ava {
+  width: 100%;
+  height: 100%;
+}
+
+.about__content-text {
+  font-size: 1.1em;
+  font-weight: 500;
+  line-height: 2em;
+  letter-spacing: 0.5px;
+  font-family: 'Bebass', sans-serif;
+  color: black;
+  text-align: justify;
+  
+}
+
+.about__socail {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 2vh;
+}
+
+.about__social_vk,
+.about__social_insta,
+.about__social_telegram
+{
+  background-image: url("../img/sprite.png");
+  width: 50px;
+  height: 50px;
+}
+
+.about__social_vk {
+  background-position: -255px -15px;
+}
+
+.about__social_insta {
+  background-position: -195px -15px;
+}
+
+.about__social_telegram {
+  background-position: -255px -134px;
+}

@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'source-sans-pro';
+    src: url(../fonts/sourcesanspro.ttf);
+}
+
+@font-face {
+    font-family: 'lato-black';
+    src: url(../fonts/latoblack.ttf);
+}
+
+@font-face {
+    font-family: fontello;
+    src: url(../fonts/fontello.ttf);
+}
+
+@font-face {
+    font-family: 'Comfortaa-Regular';
+    src: url('../fonts/Comfortaa-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Architectural';
+    src: url("../fonts/Architectural.ttf");
+}
+
+@font-face {
+    font-family: 'Amatic';
+    src: url('../fonts/AmaticSC-regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url('../fonts/Jura-Regular.ttf');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Bebass';
+    src: url('../fonts/BebasNeueRegular.otf');
+    font-style: normal;
+    font-weight: normal;
+}

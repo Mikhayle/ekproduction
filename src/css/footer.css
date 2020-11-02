@@ -1,0 +1,87 @@
+/* FOOTER */
+.footer {
+    background-color: #26282c;
+}
+
+.footer .container {
+    padding: 4vh 0;
+}
+
+.social-media i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    color: grey;
+    border-radius: 25%;
+    transition: all 0.4s ease-out;
+
+}
+
+.social-media i:hover {
+    color: #fff;
+    transition: all 0.4s ease-in;
+}
+
+.fa-telegram:hover {
+    background-color: #0088cc;
+
+}
+.fa-whatsapp:hover {
+    background-color: #25D366;
+}
+.fa-youtube:hover {
+    background-color: #FF0000;
+}
+.fa-vk:hover {
+    background-color: #5181B8;
+}
+.fa-instagram:hover {
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+
+}
+
+.fa span {
+    font-family: 'Bebass', sans-serif;
+}
+
+.footer__contacts_list-item {
+    font-size: 1.5em;
+    margin-bottom: 2vh;
+    color: grey;
+}
+
+.footer__contacts_list-item  i  span {
+    margin-left: 1vw;
+}
+
+.footer__link {
+    color: inherit;
+    transition: color 0.3s ease-out;
+}
+
+.footer__link:hover {
+    transition: color 0.3s ease-in;
+}
+.border {
+    padding: 10px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    border-top: 1px solid white;
+}
+
+.footer-bottom {
+    padding: 10px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    border-top: 1px solid gray;
+}
+.footer-bottom a {
+    text-decoration: none;
+    color: #506a85;
+}

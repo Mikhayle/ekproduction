@@ -1,0 +1,371 @@
+@media (max-height: 1070px) and (min-width: 1920px) {
+  .intro_video {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@media (max-height: 900px) and (max-width: 1920px) {
+  .intro_video {
+    height: auto;    
+  }
+}
+
+/* // Большие девайсы (большие десктопы, >= 992px) */
+@media screen and (max-width: 1200px) {
+  .about__content-text {
+    padding: 5px;
+    line-height: 1.8em;
+  }
+
+  .price__item_front, .price__item_back {
+    border: none;
+  }
+
+  .price__item_scale {
+    transform: scale(1);
+  }
+
+  .price__item_list {
+    line-height: 1.2em;
+  }
+
+  .heading .br {
+    display: block;
+  }
+
+  .btn {
+    width: 150px;
+  }
+
+  .portfolio__item {
+    padding: 5px;
+    margin: 10px;
+  }
+}
+
+
+/* // Средние девайсы («таблетки», >= 768px)  */
+@media screen and (max-width: 991px) {
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 4;
+  }
+
+  .header__burger span {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 9px;
+    background: #fff;
+  }
+
+  .header__burger:before,
+  .header__burger:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: all 0.3s ease-out;
+  }
+
+  .header__burger:before {
+    top: 0;
+  }
+
+  .header__burger:after {
+    bottom: 0;
+  }
+
+  .header__burger.active:before {
+    transform: rotate(45deg);
+    top: 9px;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: all 0.3s ease-in;
+
+  }
+  .header__burger.active:after {
+    transform: rotate(-45deg);
+    bottom: 9px;
+    transition: all 0.3s ease-in;
+  }
+
+  .header__burger.active > span {
+    transform: scale(0);
+  }
+  header.scrolled .header__burger.dark:after,
+  header.scrolled .header__burger.dark:before,
+  header.scrolled .header__burger.dark span {
+    background: #fff !important;
+  }
+
+  header .header__burger.dark:after,
+  header .header__burger.dark:before,
+  header .header__burger.dark span {
+    background: #000;
+  }
+
+
+
+  .header__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 3;
+    padding-top: 15vh;
+    text-align: center;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: all 0.5s;
+  }
+
+  .header__menu.active {
+    top: 0;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: all 0.5s;
+  }
+
+  .header__menu ul {
+    display: block;
+  }
+
+  .header__menu ul li {
+    margin-bottom: 7vh;
+  }
+
+  .nav__link {
+    color: #26282c;
+    font-size: 2.5em;
+    letter-spacing: 0.5vw;
+  }
+
+  .title {
+    font-size: 3rem;
+  }
+
+  .about__avatar {
+    width: 100%;
+    margin-top: 4vh;
+    order: 2;
+  }
+
+  .about__socail {
+    order:3
+  }
+
+  .price__item_list {
+    line-height: 2em;
+  }
+
+  .event-card-js {
+    margin-top: 20px;
+  }
+
+  .insta-card-js {
+    margin-top: 20px;
+  }
+
+  .slider__image {
+    display: none;
+  }
+
+  .user-info {
+    margin-bottom: 2vh;
+  }
+
+  .feedback-title {
+    font-size: 2em;
+  }
+
+  .footer__contacts_list-item {
+    font-size: 1.1em;
+  }
+
+  .container > .row {
+    margin: 0;
+  }
+
+  .fa-3x {
+    font-size: 2em !important;
+  }
+}
+
+/* // Малые девайсы («ландшафтные», >= 575px) */
+@media screen and (max-width: 768px) {
+  .logo-wrapper {
+    flex: 0 0 80px;
+  }
+
+  .container:not(.header-container) {
+    padding: 7vh 0 2vh 0;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .intro {
+    height: 100vh;
+  }
+
+  .about__avatar {
+    width: 300px;
+    height: 300px;
+  }
+
+  .price__item_list {
+    padding: 0 5vw;
+  }
+
+  .text {
+    line-height: 1.5em;
+  }
+
+  .video {
+    margin-bottom: 0;
+  }
+
+  .footer__contacts_list {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+/* // Экстрамалые девайсы («портретные телефоны», < 576px) */
+@media screen and (max-width: 576px) {
+
+  .popup {
+    width: 300px;
+    margin: 10px auto;
+  }
+
+  .modal-body form .comment {
+    height: 60px;
+  }
+
+  .about__content-text {
+    padding: 0 30px;
+    font-size: 1em;
+  }
+
+  .block__heading {
+    width: 80%;
+  }
+
+  .price__item {
+    margin-bottom: 5vh;
+  }
+
+  .price__item_back {
+    font-size: 1em;
+  }
+
+  .price__item_list {
+    padding: 0 8vw;
+  }
+
+  .text {
+    line-height: 1.8em;
+    font-size: 1.1em;
+  }
+
+  .hb-card-js {
+    margin-top: 20px;
+  }
+
+  .review {
+    padding: 10px;
+  }
+
+  .slider__image {
+    margin-bottom: 500px;
+  }
+
+  .feedback-title {
+    font-size: 1.6em;
+  }
+
+  .review {
+    font-size: 1em;
+    padding: 0 20px;
+  }
+
+
+  .footer__contacts_list {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .text {
+    font-size: 0.9em;
+  }
+}
+
+@media (orientation: landscape) {
+  .popup-active {
+    transform: translateY(35px);
+  }
+
+  .popup {
+    width: 600px;
+  }
+
+  .modal-header {
+    margin-bottom: 30px ;
+  }
+
+  .modal-body form .form-control, .form-check {
+    flex: 0 0 65%;
+    margin-bottom: 20px;
+  }
+
+  .modal-body form label {
+    flex: 0 0 25%;
+  }
+
+  .modal-footer .btn {
+    margin-top: 2vh;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 768px){
+  .popup {
+    width: 400px;
+  }
+
+  .modal-body form .comment,
+  .modal-body form .form-check,
+  label[for="type-of-connect"],
+  label[for="comment"] {
+    display: none;
+  }
+
+  .modal-body form .form-check {
+    flex: 0 0 40%;
+  }
+
+
+}

@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<title>Евгений Коржавин, видеограф</title>
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="shortcut icon" href="./img/favicon.png" type="image/png">
+	<link rel="stylesheet" href="./css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="./css/fonts.css">
+	<link rel="stylesheet" href="./css/swiper.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./css/about.css">
+	<link rel="stylesheet" href="./css/feedback.css">
+	<link rel="stylesheet" href="./css/footer.css">
+	<link rel="stylesheet" href="./css/hover.css">
+	<link rel="stylesheet" href="./css/popup.css">
+	<link rel="stylesheet" href="./css/media.css">
+
+
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script src="js/jquery-input-mask-phone-number.min.js"></script>
+	<script src="js/jquery.mask.js"></script>
+	<script src="js/popup.js"></script>
+
+</head>
+<body>	
+	<div class="popup-container popup-container_feedback">
+		<div class="popup popup_feedback">
+
+			<div class="modal-header">
+				<h5 class="modal-title">Заказать услугу</h5>
+				<button type="button" class="close-form">
+					<span>&times;</span>
+				</buttton>
+			</div>
+			<form action="telegram.php" method="POST">
+				<div class="modal-body">
+					
+					
+						<label for="fb_user_name">Ваше Имя</label>
+						<input class="form-control" type="text" name="user_name" id="fb_user_name">
+						<label for="fb_user_phone">Номер телефона</label>
+						<input class="form-control phone" type="text" name="user_phone" id="fb_user_phone" maxlength="14">
+						<label for="type-of-connect">Предпочитаемый вид связи</label><br>
+						<div id="type-of-connect" class="form-check">
+							<div class="col">
+								<input class="form-check-inline" id="phone-connect" type="checkbox" name="type-of-connect" value="По телефону">
+								<label class="form-check-label" for="phone-connect">Звонок</label>
+							</div>
+							<div class="col">
+								<input class="form-check-inline" id="email-connect" type="checkbox" name="type-of-connect" value="По электронной почте">
+								<label for="email-connect">E-mail</label>
+							</div>
+						</div>
+							<label class="download-foto" for="download-foto">
+								Загрузить фото
+								<input class="download-foto" type="file" id="download-foto" name="download_foto">
+							</label>
+						<br><label for="comment">Комментарий</label>
+						<textarea class="form-control comment" name="user_comments" id="comment" cols="30" rows="10"></textarea>
+					
+				</div>
+
+				<div class="modal-footer">
+					<button type="submit" class="btn btn-submit">Отправить</button>
+				</div>
+			</form>
+			<div class="modal-after">
+				<h5 class="modal-title">Спасибо, я свяжусь с Вами в ближайшее время!</h5>
+				<button class="btn btn_after">Закрыть</button>
+			</div>
+		</div>
+
+	</div>
+	<header class="header">
+		<div class="container header-container">
+			<div class="row justify-content-between align-items-center">
+				<div class="col-4 col-md-2 logo-wrapper">
+					<a href="#intro">
+						<img src="img/logo.png" alt="Евгений Коржавин">
+					</a>
+				</div>
+				<div class="header__burger">
+					<span></span>
+				</div>
+				<nav class="col-lg-6 header__menu">
+					<ul class="row justify-content-between">						
+						<li><a href="#about" class="nav__link nav__link-js">обо мне</a></li>
+						<li><a href="#portfolio" class="nav__link nav__link-js">Портфолио</a></li>
+						<li><a href="#price" class="nav__link nav__link-js">Услуги</a></li>
+						<li><a href="#feedback" class="nav__link nav__link-js">отзывы</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main>
+		<section id="intro" class="block intro">
+			<video class="intro_video" muted autoplay loop playsinline>
+				<source src="video/video_intro.MP4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+				<source src="video/hero.webm" type='video/webm; codecs="vp8, vorbis"'>
+				<source src="video/hero.ogv" type='video/ogv; codecs="theora, vorbis"'>
+			</video>
+			<div class="container">
+				<h1 class="title">Евгений Коржавин
+					<span>профессиональный видеограф</span>
+				</h1>
+			</div>
+		</section>
+		
+		<section id="about" class="about block">
+			<div class="container">
+				<div class="row about__content">
+					<div class="col-12 col-lg-6 about__avatar">
+						<video class="about__video-ava" muted autoplay loop playsinline>
+							<source src="video/about.MP4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>								
+							<source src="video/about_ava.webm" type='video/webm; codecs="vp8, vorbis"'>
+							<source src="video/about_ava.ogv" type='video/ogv; codecs="theora, vorbis"'>
+						</video>
+					</div>
+
+					<div class="col-12 col-lg-5 about__content-text">
+						<p>Приветствую вас на странице «EK Production»!
+							Если вы оказались здесь, значит задумались о видеосъемке. 
+							Я могу быть вам полезен в  создании классного контента, исходя из ваших потребностей!							
+							Меня зовут Евгений Коржавин и я видеомейкер. Видеомейкинг - это работа над созданием эмоционально-окрашенного видео
+							 с использованием видео-монтажа для достижения определенных задач. 
+							 И я готов помочь вам в реализации самых смелых идей - в желанный результат. 
+							 За 2-х летний опыт работы, я обрел десятки довольных клиентов, которые с удовольствием используют видео для бизнеса,
+							 семейного архива, социальных сетей и обращаются снова и снова.
+							 От вас потребуется только идея, остальное я возьму на себя. Работа проходит под лозунгом «Камера! Чувства! Эмоции! Снято!».
+							  Как итог - реализованная идея в видеоформате для вашего проекта. Заполняйте форму заявки и увидимся в съемочном процессе! 
+							</p>
+					</div>
+					<ul class="col-12 about__socail">
+						<a href="https://vk.com/korzh_molochniu"><li class="about__social_vk">
+						</li></a>
+						<a href="https://instagram.com/korzhavin_e?igshid=1v7q7u6wtin6a"><li class="about__social_insta">
+						</li></a>
+						<a href="https://t.me/ek_production_ru"><li class="about__social_telegram"></li></a>
+					</ul>
+				</div>
+			</div>
+		</section>
+
+		<section id="portfolio" class="block">
+			<div class="container">
+				<h2 class="block__heading portfolio-title">Портфолио</h2>
+
+				<div class="row">
+
+					<div class="col-lg-6 video">
+						<iframe class="portfolio__item" width="560" height="315" src="https://www.youtube.com/embed/pNNJr5G4W-Q"
+						        frameborder="0"
+						         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-lg-6 video">
+						<iframe class="portfolio__item" width="560" height="315" src="https://www.youtube.com/embed/Ij3dhGW2hvQ"
+						        frameborder="0"
+						         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-lg-6 video">
+						<iframe class="portfolio__item" width="560" height="315" src="https://www.youtube.com/embed/GnWdYCFyNYs" frameborder="0"
+						         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-lg-6 video">
+						<iframe class="portfolio__item" width="560" height="315" src="https://www.youtube.com/embed/U_fvcDyUxwE" frameborder="0"
+						         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-lg-6 video">
+						<iframe class="portfolio__item" width="560" height="315" src="https://www.youtube.com/embed/eL0cr6Ke1Bo" frameborder="0"
+						         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-lg-6 video">
+						<iframe class="portfolio__item" width="560" height="315" src="https://www.youtube.com/embed/E7ycFMgrPjw" frameborder="0"
+						         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-lg-6 video">
+						<iframe class="portfolio__item" width="560" height="315" src="https://www.youtube.com/embed/etZnuNiXGM4" frameborder="0"
+						         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-lg-6 video">
+						<iframe class="portfolio__item" width="560" height="315" src="https://www.youtube.com/embed/bg29Nm4Updg" frameborder="0"
+						         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-lg-6 video">
+						<iframe class="portfolio__item" width="560" height="315" src="https://www.youtube.com/embed/mQ9pLVvyy70"
+						        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-lg-6 video">
+						<iframe class="portfolio__item" width="560" height="315" src="https://www.youtube.com/embed/y_FCpxd1Rvc" frameborder="0"
+						         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-lg-6 video">
+						<iframe class="portfolio__item" width="560" height="315" src="https://www.youtube.com/embed/YDTAI0hrC-E" frameborder="0"
+						         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<div class="col-lg-6 video">
+						<iframe class="portfolio__item" width="560" height="315" src="https://www.youtube.com/embed/PBj3qxMzReg" frameborder="0"
+						         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section id="price" class="block price">
+			<div class="container">
+				<h2 class="block__heading">
+					Услуги<br>
+				</h2>
+
+				<div class="row justify-content-around">
+
+					<div class="price__item col-8 col-lg-2 col-sm-5 wedding-card-js">
+						<div class="price__item_front front-wedding-js">
+							<picture class="icon">								
+								<img src="./img/wedding_desk.png" alt="">
+							</picture>
+							<div class="heading">
+								<h3>"STANDART"<span class="text">20000 рублей</span></h3>
+							</div>
+							<button class="btn btn-wedding-js">Подробнее</button>
+						</div>
+						<div class="price__item_back back-wedding-js">
+							<ul class="price__item_list text">
+								<li class="price__item_list-item">Тизер длиной 1 минуту (для Instagram)</li>
+								<li class="price__item_list-item">Клип 3-5 минут под песню</li>
+								<li	class="price__item_list-item">Фильм «Полная версия»</li>
+								<li class="price__item_list-item"> Съемка до 8 часов</li>
+								<li	class="price__item_list-item">Монтаж, цветокоррекция</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="price__item col-8 col-lg-2 col-sm-5 hb-card-js">
+						<div class="price__item_front front-hb-js">
+							<picture class="icon">								
+								<img src="./img/wedding_all_desk.png" alt="">
+							</picture>
+							<div class="heading">
+								<h3>"ALL IN"<span class="text">30000 рублей</span></h3>
+							</div>
+							<button class="btn btn-hb-js">Подробнее</button>
+						</div>
+						<div class="price__item_back back-hb-js">
+							<ul class="price__item_list text">
+								<li class="price__item_list-item">Тизер длиной 1 минуту (для Instagram)</li>
+								<li class="price__item_list-item">Клип 3-5 минут под песню</li>
+								<li	class="price__item_list-item">Фильм «Полная версия»</li>
+								<li class="price__item_list-item"> Съемка до 12 часов</li>
+								<li	class="price__item_list-item">Монтаж, цветокоррекция</li>
+								<li	class="price__item_list-item">Дополнительный час - 2500р</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="price__item col-8 col-lg-2 col-sm-5 event-card-js">
+						<div class="price__item_front front-event-js">
+							<picture class="icon">
+								<img src="./img/icon_birthday_desk.png" alt="Праздничные мероприятия">
+							</picture>
+							<div class="heading">
+								<h3>"Event"<span class="text">2500 руб/час</span></h3>
+							</div>
+							<button class="btn btn-event-js">Подробнее</button>
+						</div>
+						<div class="price__item_back back-event-js">
+							<ul class="price__item_list text">
+								<li class="price__item_list-item">День рождения</li>
+								<li class="price__item_list-item">Корпоратив</li>
+								<li	class="price__item_list-item">Event-мероприятия</li>
+								<li class="price__item_list-item">Love-story</li>
+							</ul>
+						</div>
+					</div>
+
+
+					<div class="price__item col-8 col-lg-2 col-sm-5 insta-card-js">
+						<div class="price__item_front front-insta-js">
+							<picture class="icon">
+								<img src="./img/icon_insta_desk.png" alt="Праздничные мероприятия">
+							</picture>
+							<div class="heading">
+								<h3>"Commerce"<span class="text">цена договорная</span></h3>
+							</div>
+							<button class="btn btn-insta-js">Подробнее</button>
+						</div>
+						<div class="price__item_back back-insta-js">
+							<ul class="price__item_list text">
+								<li class="price__item_list-item">Ролик для ленты</li>
+								<li class="price__item_list-item">Ролик для stories</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="faq-services">
+			<button class="btn-main btn-service-js">Заказать услугу</button>
+		</section>
+
+
+		<section id="feedback" class="block block-dark feedback">
+			<div class="container">
+				<h2 class="block__heading">
+					отзывы
+				</h2>
+
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+
+						<div class="swiper-slide">
+							<div class="row justify-content-center">
+								<div class="col-lg-3 user-info">
+									<img class="user-info__ava" src="./img/1.jpg" alt="">
+									<h3 class="user-info__name">
+										Александра Конкина
+									</h3>
+									<div class="user-info__date">
+										25.10.2019
+									</div>
+								</div>
+								<div class="col-xs-10 col-lg-6 content">
+									<p class="review">
+										Было очень приятно поработать с Евгением! Заснял нам потрясающую лав стори, мы там получились
+										просто волшебные)) Спасибо за качественно проделанную работу. Восторг полный 🌸🌸🌸
+
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="row justify-content-center">
+								<div class="col-lg-3 user-info">
+									<img class="user-info__ava" src="./img/2.jpg" alt="">
+									<h3 class="user-info__name">
+										Алёна Лукьяненко
+									</h3>
+									<div class="user-info__date">
+										15.03.2020
+									</div>
+								</div>
+								<div class="col-xs-10 col-lg-6">
+									<p class="review">
+										Женя, спасибо большое за крутое lovestory 💞 Очень спокойно было во время съемки и смогли
+										полностью расслабиться)
+
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="row justify-content-center">
+								<div class="col-lg-3 user-info">
+									<img class="user-info__ava" src="./img/3.jpg" alt="">
+									<h3 class="user-info__name">
+										Лена Галиаскарова
+									</h3>
+									<div class="user-info__date">
+										16.03.2020
+									</div>
+								</div>
+								<div class="col-xs-10 col-lg-6">
+									<p class="review">
+										Работаю с Женей как фотограф уже больше года и даже сама у него заказывала репортажную съемку для
+										своего Fashion воркшопа. Всегда советую его своим заказчикам, кто ищет помимо фотографа -
+										видеомейкера и получаю тонны благодарностей за такие золотые руки!
+
+										Умеет придавать динамику при монтаже, быстро располагает к себе и вы его воспринимаете не как человека, который "пришел-отработал-ушел", а как друга, к работе которого относитесь с доверием и даете возможность для экспериментов)
+								Гарантирую, что если вам нужен видеомейкер и вы выбираете Женю, то больше вам никого не захочется рассматривать для дальнейших коллабораций и сотрудничества)
+
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="row justify-content-center">
+								<div class="col-lg-3 user-info">
+									<img class="user-info__ava" src="./img/4.jpg" alt="">
+									<h3 class="user-info__name">
+										Ирина Булганина
+									</h3>
+									<div class="user-info__date">
+										25.03.2020
+									</div>
+								</div>
+								<div class="col-xs-10 col-lg-6">
+									<p class="review">
+										Женя, спасибо огромное! Благодарим с Антоном тебя бесконечно за такую память и что был частью нашего праздника и за сам процесс съёмки, он был легким, непринужденным, ты очень располагаешь к себе)))
+										Видео огонь🔥🔥🔥Пересматривали тысячу раз, столько деталей, столько эмоций попало, как будто это
+										было все не с нами! Так хотелось, что бы видео не заканчивалось, Кайф!!! Все просто максимально
+										круто! Мы очень счастливы, что доверили тебе запечатлеть один из самых важных дней нашей жизни, что наш выбор остановился на тебе! Ты мастер своего дела! Большой молодец
+										Спасибо еще раз за проделанную, качественную работу! Просто анриал! Успехов тебе и побольше крутых
+										съёмок, проектов, людей вокруг!!!
+
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="row justify-content-center">
+								<div class="col-lg-3 user-info">
+									<img class="user-info__ava" src="./img/5.jpg" alt="">
+									<h3 class="user-info__name">
+										Михаил Синявский
+									</h3>
+									<div class="user-info__date">
+										18.03.2020
+									</div>
+								</div>
+								<div class="col-xs-10 col-lg-6">
+									<p class="review">
+										Спасибо огромное Жене, за проделанную работу, был относят уже не один ролик, с каждым разом
+										удивляет всё больше и больше) Видно, что человек этим живёт, постоянно учится и воплощает крутые моменты)
+
+									</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper-slide">
+							<div class="row justify-content-center">
+								<div class="col-lg-3 user-info">
+									<img class="user-info__ava" src="./img/6.jpg" alt="">
+									<h3 class="user-info__name">
+										Елена Андреевна
+									</h3>
+									<div class="user-info__date">
+										21.03.2020
+									</div>
+								</div>
+								<div class="col-xs-10 col-lg-6">
+									<p class="review">
+										Женя снимал для нас промо ролики, которые мы с гордостью разместим на нашем сайте и в соц. сетях!
+										Понял наши идеи с полуслова. Воплотил лучше, чем мы ожидали!
+										А как с ним комфортно работать! Атмосфера, лёгкость и профессионализм. Наши стеснительные модели были в восторге😄 Что уж говорить обо мне, как о заказчике!
+										Это точно не последний проект, который мы реализуем вместе с Женей!
+										Советуем, вы точно останетесь довольны его работой!
+
+									</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+					<div class="swiper-button-next slider__arrow slider__arrow_right">
+						<img class="slider__image" src="./img/arrow_right.png" alt="Следующий">
+					</div>
+					<div class="swiper-button-prev slider__arrow slider__arrow_left">
+						<img class="slider__image" src="./img/arrow_left.png" alt="Пердыдущий">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="faq-review">
+			<h2 class="feedback-title">Расскажи всем о впечатлениях <br>после просмотра своего фильма или клипа</h2>
+			<button class="btn-main btn-feedback">Оставить отзыв</button>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="row justify-content-between align-items-center">
+				<div class="col-md-5 col-lg-5 col-xl-4">
+					<ul class="social-media row justify-content-around">
+						<li><a href="https://t.me/ek_production_ru"><i class="fa fa-telegram fa-3x" aria-hidden="true"></i></a></li>
+						<li><a href=" https://wa.me/79811901435"><i class="fa fa-whatsapp fa-3x" aria-hidden="true"></i></a></li>
+						<li><a href="https://www.youtube.com/channel/UCdltT3KOOzXRpmbbAutHUsA/featured"><i class="fa fa-youtube fa-3x" aria-hidden="true"></i></a></li>
+						<li><a href="https://vk.com/korzh_molochniu"><i class="fa fa-vk fa-3x" aria-hidden="true"></i></a></li>
+						<li><a href="https://instagram.com/korzhavin_e?igshid=1v7q7u6wtin6a"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+
+				<div class="col-md-4 col-lg-4">
+					<ul class="footer__contacts_list">
+						<li class="footer__contacts_list-item"><i class="fa fa-map-marker" aria-hidden="true"><span>г.
+							Санкт-Петербург</span></i></li>
+						<li
+								class="footer__contacts_list-item"><i class="fa fa-phone" aria-hidden="true"><a
+								href="tel:+79811901435" class="footer__link"><span>+7(981)-
+							190-14-35</span></a></i></li>
+						<li
+								class="footer__contacts_list-item"><i class="fa fa-envelope" aria-hidden="true"><a
+								href="mailto:info@ekproduction.ru" class="footer__link"><span>info@ekproduction
+							.ru</span></a></i></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			Copyright &copy; <a href="http://alexmiko.ru">AlexMiko</a> & <a href="http://bekim.ru">BeKim</a> 2020. All rights
+			reserved.
+		</div>
+	</footer>
+
+
+
+<!--	Слайдер настройка и скрипты -->
+	<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script>
+		var swiper = new Swiper('.swiper-container', {
+			spaceBetween: 30,
+			centeredSlides: true,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: false,
+			},
+
+			navigation: {
+				nextEl: '.swiper-button-next',
+				prevEl: '.swiper-button-prev',
+			},
+		});
+	</script>
+
+</body>
+</html>
